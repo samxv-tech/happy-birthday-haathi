@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Haathi 🐘</title>
+<style>
+body{margin:0;font-family:Arial;background:linear-gradient(135deg,#d3d3d3,#f0f0f0);color:#111;overflow:hidden}
+.slider{display:flex;width:100vw;height:100vh;overflow-x:scroll;scroll-snap-type:x mandatory;scroll-behavior:smooth}
+.page{flex:0 0 100vw;height:100vh;scroll-snap-align:start;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:20px;box-sizing:border-box;text-align:center}
+.card{background:rgba(255,255,255,0.7);border-radius:16px;padding:18px;max-width:520px}
+.emoji{font-size:34px;margin-bottom:10px}
+p{font-size:15px;line-height:1.6}
+button{margin-top:12px;padding:10px 16px;border:none;border-radius:8px;background:#111;color:#fff}
+.next-btn{position:absolute;bottom:15px;right:15px}
+</style>
+</head>
+<body>
+<div class="slider" id="slider">
+
+<div class="page"><div class="card"><div class="emoji">🐘💞</div><p>Karan… mera golu molu haathi… happiest birthday bhaiya… bhagwan kare tum hamesha khush raho…</p></div><button class="next-btn" onclick="nextPage()">Next ➡️</button></div>
+
+<div class="page"><div class="card"><div class="emoji">🐘✨</div><p>Yaad hai? Ambuja cement group… meme fight… aur ek ajnabi mera bhai ban gaya…</p></div><button class="next-btn" onclick="nextPage()">Next ➡️</button></div>
+
+<div class="page"><div class="card"><div class="emoji">🐘💫</div><p>“Meri behen banogi?” tune poocha… aur wahi se sab shuru hua…</p></div><button class="next-btn" onclick="nextPage()">Next ➡️</button></div>
+
+<div class="page"><div class="card"><div class="emoji">🐘😄</div><p>Din raat baatein… hasi… chidana… aur dheere dheere tu bohot khaas ho gaya…</p></div><button class="next-btn" onclick="nextPage()">Next ➡️</button></div>
+
+<div class="page"><div class="card"><div class="emoji">🐘❤️</div><p>Tu bhai hai… lekin sage se zyada… dost hai lekin jaan se bhi pyaara…</p></div><button class="next-btn" onclick="nextPage()">Next ➡️</button></div>
+
+<div class="page"><div class="card"><div class="emoji">🐘🤍</div><p>Kabhi misunderstandings hui… par dil se main hamesha tumhari khushi hi chahta hu…</p></div><button class="next-btn" onclick="nextPage()">Next ➡️</button></div>
+
+<div class="page"><div class="card"><div class="emoji">🐘🌙</div><p>Main bas tumhari fikr karta hu… chahe main paas rahu ya nahi…</p></div><button class="next-btn" onclick="nextPage()">Next ➡️</button></div>
+
+<div class="page"><div class="card"><div class="emoji">🐘💔</div><p>Kabhi thoda hurt bhi hua… par main kabhi tumhare against nahi jaunga…</p></div><button class="next-btn" onclick="nextPage()">Next ➡️</button></div>
+
+<div class="page"><div class="card"><div class="emoji">🐘🌈</div><p>Teri jagah koi nahi le sakta… chahe koi aaye ya na aaye…</p></div><button class="next-btn" onclick="nextPage()">Next ➡️</button></div>
+
+<div class="page"><div class="card"><div class="emoji">🐘🙏</div><p>Thank you… mujhe itna pyaar dene ke liye… mera khayal rakhne ke liye…</p></div><button class="next-btn" onclick="nextPage()">Next ➡️</button></div>
+
+<div class="page"><div class="card"><div class="emoji">🐘🍀</div><p>Main wada karta hu… tumhari jagah koi nahi le sakta… kabhi bhi nahi…</p></div><button class="next-btn" onclick="nextPage()">Next ➡️</button></div>
+
+<div class="page"><div class="card"><div class="emoji">🐘🥺</div><p>Bas ek last wish… kabhi khana skip mat karna… please apna khayal rakhna…</p></div><button class="next-btn" onclick="nextPage()">Next ➡️</button></div>
+
+<div class="page"><div class="card"><div class="emoji">🐘💞</div><p>I love you bhaiya… mera golu molu haathi… hamesha ❤️</p></div><button class="next-btn" onclick="nextPage()">Next ➡️</button></div>
+
+<div class="page"><div class="card"><div class="emoji">🐘👑</div><h1>Best Brother Ever</h1><p>Tum sirf bhai nahi… tum meri strength ho… meri smile ho… aur meri life ka sabse special part ho…</p></div></div>
+
+</div>
+
+<script>
+const slider=document.getElementById('slider');let currentPage=0;function nextPage(){currentPage++;slider.scrollTo({left:currentPage*window.innerWidth,behavior:'smooth'})}
+</script>
+</body>
+</html>
